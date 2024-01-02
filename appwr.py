@@ -4,7 +4,7 @@ import pandas as pd
 st.title("Kalkulator Winrate MLBB")
 
 # Input
-img_url = "logo.jpeg"  # Ganti dengan URL gambar yang ingin Anda gunakan
+img_url = "logo.png"  # Ganti dengan URL gambar yang ingin Anda gunakan
 st.sidebar.image(img_url, use_column_width=True)
 st.sidebar.header("Silahkan masukan data")
 
