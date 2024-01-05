@@ -12,7 +12,7 @@ st.set_page_config(
 
 # Set the width of the main content
 img = Image.open("logo.png")
-img = img.resize((200, 200))
+img = img.resize((500, 500))
 # Convert the image to a base64 string
 buffered = BytesIO()
 img.save(buffered, format="PNG")
