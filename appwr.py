@@ -50,8 +50,10 @@ def main():
     winrate_yang_diinginkan = st.number_input(
         "Winrate yang diinginkan (contoh = 60.00)")
 
+    button = st.button("**Hitung**", type="primary")
+
     # Tombol hitung
-    if st.button("Hitung"):
+    if button:
         result = calculate_total_match(
             total_match, winrate_saat_ini, winrate_yang_diinginkan)
 
