@@ -12,7 +12,7 @@ st.set_page_config(
 
 # Set the width of the main content
 img = Image.open("logo.png")
-img = img.resize((300, 300))
+img = img.resize((500, 500))
 # Convert the image to a base64 string
 buffered = BytesIO()
 img.save(buffered, format="PNG")
@@ -20,16 +20,16 @@ img_str = base64.b64encode(buffered.getvalue()).decode()
 
 # Display the image with spacing
 st.markdown(
-    f'<div style="text-align: center; margin-bottom: 20px;"><img src="data:image/png;base64,{img_str}" width="200"></div>',
+    f'<div style="text-align: center;"><img src="data:image/png;base64,{img_str}" width=123"></div>',
     unsafe_allow_html=True,
 )
 
 # Judul without spacing
-st.markdown("<h1 style='text-align: center; color: black;'>Kalkulator Winrate MLBB</h1>",
+st.markdown("<h2 style='text-align: center; color: black;'>Kalkulator Winrate MLBB</h2>",
             unsafe_allow_html=True)
 
 # Deskripsi with spacing
-st.markdown("<div style='text-align: center; margin-bottom: 20px;'>Kalkulator ini digunakan untuk menghitung berapa banyak match yang harus dimainkan tanpa kekalahan untuk mencapai winrate yang diinginkan.</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center;'>Digunakan untuk menghitung jumlah match yang harus dimainkan tanpa kekalahan untuk mencapai winrate yang diinginkan.</div>", unsafe_allow_html=True)
 
 # Fungsi untuk menghitung total match
 
